@@ -58,15 +58,11 @@ public class JIRAApiTest {
 
 
   @Test
-public void comment(){
+  public void comment() {
 
-  Response createIssueResponse = new PostApi().createIssues();
-  String ticketId = createIssueResponse.path("id");
+    Response createIssueResponse = new PostApi().createIssues();
+    String ticketId = createIssueResponse.path("id");
 
-
-  Response getIssueResponse = new GetApi().getIssues(ticketId);
-  assertEquals(getIssueResponse.path("fields.summary"), "Main order flow broken");
-  assertEquals(getIssueResponse.path("fields.reporter.name"), "VladKryvenko");
 
     Response addCommentResponse =
         given().
@@ -76,7 +72,7 @@ public void comment(){
                 "    \"body\": \"New comment\"\n" +
                 " }\n"
             ).when().
-            post("https://jira.hillel.it/rest/api/2/issue/"+ticketId+"/comment/").
+            post("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/").
             then().
             contentType(ContentType.JSON).
             statusCode(201).
@@ -84,14 +80,14 @@ public void comment(){
             extract().response();
     addCommentResponse.print();
     String ticketIdComment = addCommentResponse.path("id");
-   String commentURL = addCommentResponse.path("self");
+    String commentURL = addCommentResponse.path("self");
 
     Response deleteCommentResponse =
         given().
             auth().preemptive().basic("VladKryvenko", "VladKryvenko").
             contentType(ContentType.JSON).
             when().
-            delete("https://jira.hillel.it/rest/api/2/issue/"+ticketId+"/comment/"+ticketIdComment).
+            delete("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
             then().
             statusCode(204).
             extract().response();
@@ -101,16 +97,18 @@ public void comment(){
             auth().preemptive().basic("VladKryvenko", "VladKryvenko").
             contentType(ContentType.JSON).
             when().
-            get("https://jira.hillel.it/rest/api/2/issue/"+ticketId+"/comment/"+ticketIdComment).
+            get("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
             then().
             statusCode(404).
             extract().response();
     getDeleteCommentResponse.print();
 
-    Response deleteIssueResponse = new DeleteApi().deleteIssues(ticketId);
+    Response getIssueResponse = new GetApi().getIssues(ticketId);
     Assert.assertFalse(getIssueResponse.toString().contains(commentURL));
 
+    Response deleteIssueResponse = new DeleteApi().deleteIssues(ticketId);
 
+    Response checkIfIssuesDeleteResponse = new GetApi().getDeleteIssues(ticketId);
   }
 
   @Test
