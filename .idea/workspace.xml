@@ -1,10 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae519ebf-142a-4799-9f0a-9ac3275db214" name="Default Changelist" comment="add">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_osgi_2_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_java_commons_2_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_model_2_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_testng_2_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_json_path_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_common_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_xml_path_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sling_org_apache_sling_javax_activation_0_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tika_tika_core_1_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jooq_joor_java_8_0_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/00f199da-f07c-4546-b533-1e53e8feca72-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/073d56a6-3d19-479a-a64a-f4e33e6671ca-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/090800c5-fd78-43b6-96e6-06e71400203b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0b1d4266-60aa-4564-8071-9311e9afe4e2-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0dfe9420-63f4-4c0b-b1ad-d3e0dd525653-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0eff72f2-76cf-44c9-995d-91c1cf7fac44-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/17086a33-8121-4687-b720-1ffce25ef9c5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1aaaf427-8ff4-43a9-ab0a-db3ba8b12c0d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1b7610ea-1211-4d72-bb96-b118a8a9b548-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1f581752-c3a4-42e8-8923-9a315dfa9e09-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1f821948-3ba4-4b50-a229-6ef6e950eb21-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1fddf142-21a1-4776-8bf5-5c3401510d6f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/246466c8-47ea-4942-a8c4-88da15cbfbd0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/264b2225-1fa2-40dc-a78a-5aeb72edc177-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2a2d6c5c-44f6-45f3-9d32-3e49da0a94a0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2cd2e615-59b7-4630-a178-5a7a49537b18-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/41931b62-37e9-4ade-b403-099a958b5590-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/41fe5de4-aa8a-4e61-9c49-535608b10a1c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/459517ec-5109-4ed7-a623-25d67535cbde-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4ec170a3-c0cb-44b0-a4ca-590d804d6daa-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5b0a2fd2-fa37-425f-931c-3214de854e72-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5f1d8534-8518-4a1a-9512-ad52575af612-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5faa91c4-5b44-491c-a3c1-79cbecec9ba1-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6169f071-8890-4a36-9ae7-9ffa593297a0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/63768ea3-03b7-4eae-beeb-03fb01448170-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/65d913b5-eec0-4606-8751-162e808f2a84-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/66f24b1b-3698-442f-bc73-a052c77c7ece-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/680a8701-e40d-4c7f-b27a-7b552e44157c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/69b56223-3b8a-402f-8fe9-1b4d90f95f3e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7157c59f-8a59-4af1-839f-885c722c8675-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/766baee1-4130-4de9-839d-1f53da06249a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/83c0684a-e666-4784-ba94-f6d8d755bbe7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/889e795e-55f6-4c91-8a5a-e69320152ed9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9a5b2ed9-8392-4eb0-8859-7c29830fea51-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9a879248-828c-4b3e-9095-802afe14df24-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9c1bc081-f1a2-4468-9fc3-7535324b1051-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a13879f1-60e0-4d86-88b0-99286df26320-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a6c39ed9-c56e-4d4f-8db9-f75073bcf094-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a79dd62a-98e2-4bc4-a37b-306fe0152249-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ab145f31-e3d7-413e-a8b5-477fc16b8c5c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/abe962a1-61a2-41cb-8e7a-c724af0d04b5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/af1a1354-a8d3-4357-8df4-8f78790e184d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b9a0cc26-928e-46b8-ba93-91cc3168d535-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ba8ba2ed-eda0-4dfe-96e6-93f7e588b844-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bca32ce8-913b-44a3-bee0-7b9cd3ae4601-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bf93b257-d24a-404b-9b95-2ed342d01ebb-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d54edc8e-49a8-4685-b7b3-a3448bb53937-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d57ed01b-4b70-40a6-8015-08bb86d204cd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d9fcb2ed-ca7f-46a6-904c-6cdce90970c0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/de434be2-5385-4fd3-9d35-e8357c2a0599-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e10eef55-7ccc-45ba-92ed-f841e25abd5c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e1cb4b2b-4fc8-4911-b791-5420c7e7fe75-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e9f25818-23a5-4329-b4fc-189328431752-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ef5a9a0e-bf29-4f88-99a4-c4ef5cc13ccc-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f160458f-edcb-4e7c-9db6-c7ab2bc569e0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f9d9c54d-7365-4a34-ba6f-8d45581a741b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-automation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JIRAApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JIRAApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/JIRAApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JIRAApiTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProjectId" id="1iTPhoPHcPVyHjlalKO5ZUjINOL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="TestNG.JIRAApiTest.comment">
+    <configuration name="JIRAApiTest.comment" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="api-automation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JIRAApiTest" />
+      <option name="METHOD_NAME" value="comment" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JIRAApiTest.createIssuesRaw" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="api-automation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JIRAApiTest" />
+      <option name="METHOD_NAME" value="createIssuesRaw" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.JIRAApiTest.comment" />
+        <item itemvalue="TestNG.JIRAApiTest.createIssuesRaw" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae519ebf-142a-4799-9f0a-9ac3275db214" name="Default Changelist" comment="" />
+      <created>1601928733701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601928733701</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add">
+      <created>1601928787904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601928787904</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1320" height="197" key="GridCell.Tab.0.bottom" timestamp="1602079016663">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="197" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1602079016663" />
+    <state width="1320" height="197" key="GridCell.Tab.0.center" timestamp="1602079016662">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="197" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1602079016662" />
+    <state width="1320" height="197" key="GridCell.Tab.0.left" timestamp="1602079016662">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="197" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1602079016662" />
+    <state width="1320" height="197" key="GridCell.Tab.0.right" timestamp="1602079016663">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="197" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602079016663" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601928792507">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1601928792507" />
   </component>
 </project>
