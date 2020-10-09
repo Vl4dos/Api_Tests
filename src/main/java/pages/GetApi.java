@@ -36,4 +36,16 @@ public class GetApi {
             extract().response();
     return response;
   }
+  public Response getDeleteComment (String ticketId ,String ticketIdComment ){
+    Response getDeleteCommentResponse =
+        given().
+            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            contentType(ContentType.JSON).
+            when().
+            get("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
+            then().
+            statusCode(404).
+            extract().response();
+    return getDeleteCommentResponse;
+  }
 }

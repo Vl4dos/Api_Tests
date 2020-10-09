@@ -64,44 +64,13 @@ public class JIRAApiTest {
     String ticketId = createIssueResponse.path("id");
 
 
-    Response addCommentResponse =
-        given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
-            contentType(ContentType.JSON).
-            body("{\n" +
-                "    \"body\": \"New comment\"\n" +
-                " }\n"
-            ).when().
-            post("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/").
-            then().
-            contentType(ContentType.JSON).
-            statusCode(201).
-            time(lessThan(4L), TimeUnit.SECONDS).
-            extract().response();
-    addCommentResponse.print();
+    Response addCommentResponse = new PostApi().newComment(ticketId);
     String ticketIdComment = addCommentResponse.path("id");
     String commentURL = addCommentResponse.path("self");
 
-    Response deleteCommentResponse =
-        given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
-            contentType(ContentType.JSON).
-            when().
-            delete("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
-            then().
-            statusCode(204).
-            extract().response();
-    deleteCommentResponse.print();
-    Response getDeleteCommentResponse =
-        given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
-            contentType(ContentType.JSON).
-            when().
-            get("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
-            then().
-            statusCode(404).
-            extract().response();
-    getDeleteCommentResponse.print();
+    Response deleteCommentResponse = new DeleteApi().deleteComment(ticketId,ticketIdComment);
+
+    Response getDeleteCommentResponse = new GetApi().getDeleteComment(ticketId,ticketIdComment);
 
     Response getIssueResponse = new GetApi().getIssues(ticketId);
     Assert.assertFalse(getIssueResponse.toString().contains(commentURL));

@@ -23,6 +23,12 @@ public class JIRAJSONObject {
     fields.put("project", project);
     newIssuesJSON.put("fields", fields);
     return newIssuesJSON.toJSONString();
-
   }
+
+  public static String commentJSON(){
+    JSONObject commentJSON = new JSONObject();
+    commentJSON.put("body","new Comment");
+    return commentJSON.toJSONString();
+  }
+
 }

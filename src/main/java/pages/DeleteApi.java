@@ -19,4 +19,17 @@ public class DeleteApi {
     response.print();
     return response;
   }
+  public Response deleteComment(String ticketId,String ticketIdComment){
+    Response deleteCommentResponse =
+        given().
+            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            contentType(ContentType.JSON).
+            when().
+            delete("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
+            then().
+            statusCode(204).
+            extract().response();
+    deleteCommentResponse.print();
+    return deleteCommentResponse;
+  }
 }

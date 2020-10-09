@@ -13,14 +13,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae519ebf-142a-4799-9f0a-9ac3275db214" name="Default Changelist" comment="added comment">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/JIRAJSONObject.java" afterDir="false" />
+    <list default="true" id="ae519ebf-142a-4799-9f0a-9ac3275db214" name="Default Changelist" comment="added Json object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api-automation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DeleteApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DeleteApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GetApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GetApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/JIRAJSONObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/JIRAJSONObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/PostApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PostApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JIRAApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JIRAApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/JIRAJSONObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/JIRAJSONObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/PostApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/PostApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/JIRAApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JIRAApiTest.class" afterDir="false" />
     </list>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602079616708</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added Json object">
+      <created>1602234437708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602234437708</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,29 +143,30 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
     <MESSAGE value="added comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comment" />
+    <MESSAGE value="added Json object" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Json object" />
   </component>
   <component name="WindowStateProjectService">
     <state x="369" y="41" width="617" height="720" key="#xdebugger.evaluate" timestamp="1602144520573">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="369" y="41" width="617" height="720" key="#xdebugger.evaluate/0.27.1366.741@0.27.1366.741" timestamp="1602144520573" />
-    <state width="1320" height="160" key="GridCell.Tab.0.bottom" timestamp="1602234183720">
+    <state width="1320" height="177" key="GridCell.Tab.0.bottom" timestamp="1602236912613">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1602234183720" />
-    <state width="1320" height="160" key="GridCell.Tab.0.center" timestamp="1602234183719">
+    <state width="1320" height="177" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1602236912613" />
+    <state width="1320" height="177" key="GridCell.Tab.0.center" timestamp="1602236912611">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1602234183719" />
-    <state width="1320" height="160" key="GridCell.Tab.0.left" timestamp="1602234183719">
+    <state width="1320" height="177" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1602236912611" />
+    <state width="1320" height="177" key="GridCell.Tab.0.left" timestamp="1602236912611">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1602234183719" />
-    <state width="1320" height="160" key="GridCell.Tab.0.right" timestamp="1602234183720">
+    <state width="1320" height="177" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1602236912611" />
+    <state width="1320" height="177" key="GridCell.Tab.0.right" timestamp="1602236912612">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602234183720" />
+    <state width="1320" height="177" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602236912612" />
     <state width="1320" height="215" key="GridCell.Tab.1.bottom" timestamp="1602144562233">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -175,24 +183,13 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1320" height="215" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1602144562233" />
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602079618311">
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602234439750">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602079618311" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602234439750" />
     <state x="347" y="174" key="run.anything.popup" timestamp="1602143011586">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="347" y="174" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1602143011586" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/PostApi.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
