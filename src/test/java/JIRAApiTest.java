@@ -45,13 +45,13 @@ public class JIRAApiTest {
     String ticketId = createIssueResponse.path("id");
 
 
-    Response getIssueResponse = new GetApi().getIssues(ticketId);
-    assertEquals(getIssueResponse.path("fields.summary"), "Main order flow broken");
-    assertEquals(getIssueResponse.path("fields.reporter.name"), "VladKryvenko");
-
-    Response deleteIssueResponse = new DeleteApi().deleteIssues(ticketId);
-
-    Response checkIfIssuesDeleteResponse = new GetApi().getDeleteIssues(ticketId);
+//    Response getIssueResponse = new GetApi().getIssues(ticketId);
+//    assertEquals(getIssueResponse.path("fields.summary"), "Main order flow broken");
+//    assertEquals(getIssueResponse.path("fields.reporter.name"), "VladKryvenko");
+//
+//    Response deleteIssueResponse = new DeleteApi().deleteIssues(ticketId);
+//
+//   Response checkIfIssuesDeleteResponse = new GetApi().getDeleteIssues(ticketId);
 
 
   }
