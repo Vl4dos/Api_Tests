@@ -1,4 +1,7 @@
+package pages;
+
 import io.restassured.response.Response;
+import pages.APIPathes;
 
 import static io.restassured.RestAssured.given;
 

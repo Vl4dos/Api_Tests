@@ -11,17 +11,18 @@ import static org.hamcrest.Matchers.lessThan;
 
 public class PostApi {
   static String newIssuesJSON = JIRAJSONObject.newIssuesJSON();
-static String newCommentJSON = JIRAJSONObject.commentJSON();
+  static String newCommentJSON = JIRAJSONObject.commentJSON();
+
   public Response createIssues() {
 
 
     Response response =
         given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            auth().preemptive().basic(Credentials.username, Credentials.password).
             contentType(ContentType.JSON).
             body(newIssuesJSON).
             when().
-            post("https://jira.hillel.it/rest/api/2/issue").
+            post(APIPathes.issue).
             then().
             contentType(ContentType.JSON).
             statusCode(201).
@@ -30,18 +31,19 @@ static String newCommentJSON = JIRAJSONObject.commentJSON();
     String ticketId = response.path("id");
     return response;
   }
-  public Response newComment(String ticketId){
+
+  public Response newComment(String ticketId) {
     Response addCommentResponse =
         given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            auth().preemptive().basic(Credentials.username, Credentials.password).
             contentType(ContentType.JSON).
             body(newCommentJSON)
             .when().
-            post("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/").
+            post(String.format(APIPathes.comment, ticketId)).
             then().
             contentType(ContentType.JSON).
             statusCode(201).
-            time(lessThan(4L), TimeUnit.SECONDS).
+            time(lessThan(1L), TimeUnit.SECONDS).
             extract().response();
     addCommentResponse.print();
     return addCommentResponse;

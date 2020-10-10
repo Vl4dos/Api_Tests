@@ -14,15 +14,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae519ebf-142a-4799-9f0a-9ac3275db214" name="Default Changelist" comment="added Json object">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Credentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/DeleteApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DeleteApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/GetApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GetApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/JIRAJSONObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/JIRAJSONObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/PostApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PostApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APIPathes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/APIPathes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HTTPMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HTTPMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JIRAApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JIRAApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/JIRAJSONObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/JIRAJSONObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JiraAPISteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/JiraAPISteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JiraJSONObjects.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/DeleteApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/DeleteApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/GetApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/GetApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/PostApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/PostApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/APIPathes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPMethods.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/JIRAApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JIRAApiTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/JiraAPISteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/JiraJSONObjects.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +42,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -125,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602234437708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added Json object">
+      <created>1602237842604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602237842604</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,26 +165,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="added Json object" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602317559551">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="416" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1602317559551" />
     <state x="369" y="41" width="617" height="720" key="#xdebugger.evaluate" timestamp="1602144520573">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="369" y="41" width="617" height="720" key="#xdebugger.evaluate/0.27.1366.741@0.27.1366.741" timestamp="1602144520573" />
-    <state width="1320" height="177" key="GridCell.Tab.0.bottom" timestamp="1602236912613">
+    <state width="1320" height="197" key="GridCell.Tab.0.bottom" timestamp="1602321497046">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="177" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1602236912613" />
-    <state width="1320" height="177" key="GridCell.Tab.0.center" timestamp="1602236912611">
+    <state width="1320" height="197" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1602321497046" />
+    <state width="1320" height="197" key="GridCell.Tab.0.center" timestamp="1602321497045">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="177" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1602236912611" />
-    <state width="1320" height="177" key="GridCell.Tab.0.left" timestamp="1602236912611">
+    <state width="1320" height="197" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1602321497045" />
+    <state width="1320" height="197" key="GridCell.Tab.0.left" timestamp="1602321497045">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="177" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1602236912611" />
-    <state width="1320" height="177" key="GridCell.Tab.0.right" timestamp="1602236912612">
+    <state width="1320" height="197" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1602321497045" />
+    <state width="1320" height="197" key="GridCell.Tab.0.right" timestamp="1602321497046">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="177" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602236912612" />
+    <state width="1320" height="197" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1602321497046" />
     <state width="1320" height="215" key="GridCell.Tab.1.bottom" timestamp="1602144562233">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -183,10 +205,14 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1320" height="215" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1602144562233" />
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602234439750">
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602237844781">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602234439750" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602237844781" />
+    <state x="464" y="312" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602319821144">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="464" y="312" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1602319821144" />
     <state x="347" y="174" key="run.anything.popup" timestamp="1602143011586">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

@@ -9,10 +9,10 @@ public class DeleteApi {
   public Response  deleteIssues (String ticketId){
     Response response =
         given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            auth().preemptive().basic(Credentials.username, Credentials.password).
             contentType(ContentType.JSON).
             when().
-            delete("https://jira.hillel.it/rest/api/2/issue/" + ticketId).
+            delete(APIPathes.issue + ticketId).
             then().
             statusCode(204).
             extract().response();
@@ -22,10 +22,10 @@ public class DeleteApi {
   public Response deleteComment(String ticketId,String ticketIdComment){
     Response deleteCommentResponse =
         given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            auth().preemptive().basic(Credentials.username, Credentials.password).
             contentType(ContentType.JSON).
             when().
-            delete("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
+            delete(String.format(APIPathes.commentDelete, ticketId,ticketIdComment)).
             then().
             statusCode(204).
             extract().response();

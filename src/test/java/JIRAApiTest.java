@@ -1,21 +1,12 @@
-import com.sun.org.apache.xpath.internal.operations.Equals;
-import io.restassured.http.ContentType;
-import io.restassured.http.Cookies;
 import io.restassured.response.Response;
-import io.restassured.response.ResponseOptions;
-import org.hamcrest.Matcher;
-import org.hamcrest.text.MatchesPattern;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DeleteApi;
 import pages.GetApi;
+import pages.JiraAPISteps;
 import pages.PostApi;
 
-import java.util.concurrent.TimeUnit;
-import java.util.regex.Pattern;
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.lessThan;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -62,6 +53,7 @@ public class JIRAApiTest {
 
     Response createIssueResponse = new PostApi().createIssues();
     String ticketId = createIssueResponse.path("id");
+    assertTrue(createIssueResponse.path("key").toString().contains("WEBINAR-"));
 
 
     Response addCommentResponse = new PostApi().newComment(ticketId);
@@ -80,12 +72,6 @@ public class JIRAApiTest {
     Response checkIfIssuesDeleteResponse = new GetApi().getDeleteIssues(ticketId);
   }
 
-  @Test
-  public void createIssue() {
-    Response response = JiraAPISteps.createIssue();
-    assertEquals(response.statusCode(), 201);
-    response.then().extract().path("key");
-  }
 }
 //        final Matcher<String> matcher = new MatchesPattern(Pattern.compile("[A-Z]+\\-[0-9]+"));
 //        assertTrue(matcher.matches("WEBINAR-9060"));

@@ -11,26 +11,24 @@ public class GetApi {
   public Response getIssues(String ticketId) {
     Response response =
         given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            auth().preemptive().basic(Credentials.username, Credentials.password).
             contentType(ContentType.JSON).
             when().
-            get("https://jira.hillel.it/rest/api/2/issue/" + ticketId).
+            get(APIPathes.issue + ticketId).
             then().
             contentType(ContentType.JSON).
             statusCode(200).
             extract().response();
-    response.print();
-
     return response;
   }
 
   public Response getDeleteIssues(String ticketId) {
     Response response =
         given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            auth().preemptive().basic(Credentials.username, Credentials.password).
             contentType(ContentType.JSON).
             when().
-            get("https://jira.hillel.it/rest/api/2/issue/" + ticketId).
+            get(APIPathes.issue + ticketId).
             then().
             statusCode(404).
             extract().response();
@@ -39,10 +37,10 @@ public class GetApi {
   public Response getDeleteComment (String ticketId ,String ticketIdComment ){
     Response getDeleteCommentResponse =
         given().
-            auth().preemptive().basic("VladKryvenko", "VladKryvenko").
+            auth().preemptive().basic(Credentials.username, Credentials.password).
             contentType(ContentType.JSON).
             when().
-            get("https://jira.hillel.it/rest/api/2/issue/" + ticketId + "/comment/" + ticketIdComment).
+            get(String.format(APIPathes.commentDelete, ticketId,ticketIdComment)).
             then().
             statusCode(404).
             extract().response();
